@@ -23,7 +23,24 @@ int main(){
 	loc = find(line_up.begin(),line_up.end(),"Bob");
 	line_up.insert(loc,"Oscar");
 	
-	//Write your code here
+	//Write your code hereline_up.push_back("Luffy");
+	line_up.push_back("Sanji");
+	line_up.push_back("Nami");
+	line_up.pop_front();
+	line_up.pop_front();
+	list<string>::iterator current = line_up.begin();
+	for(int i=0;i<2;i++) current++;
+	line_up.insert(current,"Narutu");
+	line_up.push_front("Prayath");
+	current = line_up.begin();
+	current++;
+	line_up.insert(current,"Tony");
+	current++;
+	line_up.erase(current);
+	line_up.pop_front();
+	line_up.pop_front();
+	line_up.pop_front();
+	
 	
 	printList(line_up);
 		
